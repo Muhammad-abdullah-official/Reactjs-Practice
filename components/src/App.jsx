@@ -1,35 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
+// simple function component
 function App() {
-  const [count, setCount] = useState(0)
-
+const myName = 'Abdullah'
+let student = 'Student of bahria university'
+let learning = 'Currently learning React js'
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <h1>{myName}</h1>
+    <h2>{student}</h2>
+    <h3>{learning}</h3>
     </>
   )
 }
 
-export default App
+// arrow function componenet
+const MyInfo = ()=>{
+  let aim = 'To be a MERN Stack Developer and AWS solution architect and AWS Developer'
+
+  return(
+
+<>
+<h3>{aim}</h3>
+
+</>
+
+  )
+
+}
+
+export  {App, MyInfo}
